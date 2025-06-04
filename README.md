@@ -135,3 +135,70 @@ Contratar fotógrafo o filmación de partidos
 Si pensás expandirte o hay extranjeros en tu zona, esto suma mucho.
 
 
+## Development setup
+
+1. **Clone the repository and start DDEV**
+
+```bash
+git clone <repository-url>
+cd cancheroo
+ddev start
+```
+
+2. **Install PHP dependencies and run migrations inside DDEV**
+
+```bash
+ddev composer install
+ddev exec php artisan migrate
+```
+
+3. **Install Node/React Native dependencies**
+
+```bash
+# From the React Native directory
+npm install
+```
+
+4. **Run the React Native app**
+
+```bash
+npx react-native start
+# in another terminal
+npx react-native run-android # or run-ios
+```
+
+The Laravel backend will be available at `http://cancheroo.ddev.site` while React Native runs on the host.
+
+### Using Artisan inside DDEV
+
+Use the PHP container for Artisan commands:
+
+```bash
+ddev exec php artisan <command>
+```
+
+For example, to create tables:
+
+```bash
+ddev exec php artisan migrate
+```
+
+### Environment variables
+
+Create a `.env` file in the Laravel project and set values such as:
+
+```
+APP_KEY=
+DB_HOST=db
+DB_DATABASE=db
+DB_USERNAME=db
+DB_PASSWORD=db
+```
+
+After installing dependencies you can run:
+
+```bash
+ddev exec php artisan key:generate
+```
+
+If your React Native app needs to reach the API, create an `.env` file there with `API_URL=http://cancheroo.ddev.site` and any other secrets (API keys, third-party tokens, etc.).

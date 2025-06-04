@@ -1,7 +1,4 @@
-# Node modules
-/mobile/node_modules/
-/mobile/.env
-/mobile/ios/Pods/
-/mobile/android/app/build/
-# OS
-.DS_Store
+# Root-level ignores for build artifacts
+**/gradle/wrapper/gradle-wrapper.jar
+**/gradlew
+**/gradlew.bat

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
@@ -77,3 +78,30 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+=======
+# React Native Mobile App
+
+This directory contains the React Native application for Cancheroo. Environment variables are loaded using the `react-native-dotenv` Babel plugin.
+
+## Setup
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Create a `.env` file in this directory based on the keys your app needs. For example:
+
+```bash
+API_URL=http://cancheroo.ddev.site
+```
+
+3. Rebuild the app after changing environment variables:
+
+```bash
+npm run android # or npm run ios
+```
+
+During development, restart the Metro bundler for changes to take effect.
+>>>>>>> 111cc4685dcaff7cca8fd485b21a7a85f316a2e1

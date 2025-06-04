@@ -1,0 +1,10 @@
+name: cancheroo
+project_type: laravel
+docroot: public
+php_version: "8.1"
+webserver_type: nginx-fpm
+router_http_port: "80"
+router_https_port: "443"
+use_dns_when_possible: true
+xdebug_enabled: false
+composer_version: "2"

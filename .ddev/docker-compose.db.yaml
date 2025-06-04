@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  db:
+    container_name: ddev-${DDEV_SITENAME}-db
+    image: mariadb:10.6
+    restart: 'no'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=db

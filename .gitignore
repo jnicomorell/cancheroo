@@ -1,2 +1,4 @@
-mobile/android/app/debug.keystore
-
+# Root-level ignores for build artifacts
+**/gradle/wrapper/gradle-wrapper.jar
+**/gradlew
+**/gradlew.bat

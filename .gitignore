@@ -1,0 +1,4 @@
+# Root-level ignores for build artifacts
+**/gradle/wrapper/gradle-wrapper.jar
+**/gradlew
+**/gradlew.bat

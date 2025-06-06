@@ -9,3 +9,5 @@ Route::get('/', function () {
 Route::get('/ping', function () {
     return 'pong';
 });
+
+Route::prefix('api')->group(__DIR__.'/api.php');

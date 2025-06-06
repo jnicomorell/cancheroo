@@ -1,0 +1,46 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\SearchController;
+use App\Http\Controllers\Api\FieldController;
+use App\Http\Controllers\Api\BookingController;
+use App\Http\Controllers\Api\PaymentController;
+use App\Http\Controllers\Api\ReservationController;
+use App\Http\Controllers\Api\TeamController;
+use App\Http\Controllers\Api\RatingController;
+use App\Http\Controllers\Api\LoyaltyController;
+use App\Http\Controllers\Api\TournamentController;
+use App\Http\Controllers\Api\AdminController;
+use App\Http\Controllers\Api\RecurringController;
+use App\Http\Controllers\Api\WeatherController;
+use App\Http\Controllers\Api\GeolocationController;
+use App\Http\Controllers\Api\ChatController;
+use App\Http\Controllers\Api\WaitlistController;
+use App\Http\Controllers\Api\RankingController;
+use App\Http\Controllers\Api\SocialLoginController;
+use App\Http\Controllers\Api\CalendarController;
+use App\Http\Controllers\Api\RentalController;
+use App\Http\Controllers\Api\NotificationController;
+use App\Http\Controllers\Api\LocalizationController;
+
+Route::get('search', [SearchController::class, 'handle']);
+Route::get('fields/{id}', [FieldController::class, 'handle']);
+Route::post('bookings', [BookingController::class, 'handle']);
+Route::post('payments', [PaymentController::class, 'handle']);
+Route::get('reservations', [ReservationController::class, 'handle']);
+Route::get('teams', [TeamController::class, 'handle']);
+Route::post('ratings', [RatingController::class, 'handle']);
+Route::get('loyalty', [LoyaltyController::class, 'handle']);
+Route::get('tournaments', [TournamentController::class, 'handle']);
+Route::get('admin', [AdminController::class, 'handle']);
+Route::post('recurring', [RecurringController::class, 'handle']);
+Route::get('weather', [WeatherController::class, 'handle']);
+Route::get('geolocation', [GeolocationController::class, 'handle']);
+Route::get('chat', [ChatController::class, 'handle']);
+Route::post('waitlist', [WaitlistController::class, 'handle']);
+Route::get('ranking', [RankingController::class, 'handle']);
+Route::post('social-login', [SocialLoginController::class, 'handle']);
+Route::get('calendar', [CalendarController::class, 'handle']);
+Route::post('rentals', [RentalController::class, 'handle']);
+Route::get('notifications', [NotificationController::class, 'handle']);
+Route::get('localization', [LocalizationController::class, 'handle']);
